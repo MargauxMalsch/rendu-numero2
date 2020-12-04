@@ -1,0 +1,52 @@
+.blocInfo {
+    display: $flex;
+    margin: $auto;
+
+    .info {
+        background-color: $white;
+        border-radius: 36px;
+        box-shadow: $shadow;
+        width: 30%;
+        padding: 50px 10px 10px 10px;
+        margin: 30px auto;
+
+        img {
+            margin: $auto;
+            display: $flex;
+        }
+
+        h4 {
+            font-size: $Size15;
+            font-family: $Poppins;
+            color: $grey;
+            padding: $paddingWWO;
+        }
+
+        p {
+            width: $width100;
+            font-family: $Lato;
+            font-size: $Size12;
+            color: $grey;
+            padding: $padding30;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blocInfo {
+        display: $block;
+
+        .info {
+            width: $width70;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .blocInfo {
+        .info {
+            width: $auto;
+            margin: $s;
+        }
+    }
+}

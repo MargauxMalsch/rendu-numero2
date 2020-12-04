@@ -1,0 +1,226 @@
+.hautePage {
+    position: $PositionRelative;
+
+    #wave {
+        position: $PositionAbsolu;
+        top: $rien;
+        right: $rien;
+        z-index: -99;
+    }
+}
+
+.logo {
+    display: $flex;
+    flex-direction: $row;
+    flex-wrap: $wrap;
+    align-items: flex-end;
+    padding-top: $s;
+
+    img {
+        margin: $marginLogo;
+    }
+
+    h3 {
+        font-family: $Dosis;
+        font-size: $Size40;
+        font-weight: $bold;
+    }
+}
+
+#menu {
+    display: $flex;
+    flex-direction: $row;
+    position: $PositionAbsolu;
+    right: $demixl;
+
+
+    li {
+        list-style: none;
+        padding: $padding20;
+        font-family: $Poppins;
+        font-weight: $menu;
+        color: $white;
+    }
+}
+
+.networks {
+    display: $flex;
+
+    #reseau {
+        margin: $marginNetworks;
+
+        li {
+            margin: $margin20;
+            list-style: none;
+        }
+    }
+
+    div:nth-child(2) {
+        width: 27%;
+        margin: 100px 0px 0px 60px;
+
+        h1 {
+            font-family: $Poppins;
+            font-weight: $menu;
+            font-size: $Size30;
+            color: $grey;
+
+            u {
+                text-decoration: none;
+                font-weight: $bold;
+                font-size: $Size50;
+                color: $grey;
+            }
+        }
+
+        p {
+            font-family: $Poppins;
+            font-weight: $light;
+            font-size: $Size12;
+            width: 70%;
+            color: $greylight;
+            margin-bottom: $margin30;
+        }
+    }
+
+    div:nth-child(3) {
+        width: 35%;
+        margin: $auto;
+    }
+}
+
+hr {
+    width: 100%;
+    transform: rotate(90deg);
+    color: $bleu;
+    margin-left: -5px;
+}
+
+#moncercle {
+    background: $white;
+    background: url(../picto/mouse.svg) no-repeat center center;
+    border-radius: $borderRadiusCercle;
+    width: $Cercle;
+    height: $Cercle;
+    margin: $auto;
+    box-shadow: $shadow;
+}
+
+@media screen and (max-width: 768px) {
+    .hautePage {
+        #wave {
+            width: $width50;
+        }
+    }
+
+    .logo {
+        align-items: $center;
+
+        img {
+            margin: $marginLogoIpad;
+            width: $width50;
+        }
+
+        h3 {
+            font-size: $Size18;
+        }
+    }
+
+    #menu {
+        li {
+            padding: $padding5;
+            font-size: $Size12;
+        }
+    }
+
+    .networks {
+        display: $flex;
+
+        #reseau {
+            margin: 20px 0px 0px 5px;
+        }
+
+        div:nth-child(2) {
+            margin: 20px 0px 0px 40px;
+
+            h1 {
+                font-size: $Size20;
+
+                u {
+                    font-size: $Size25;
+                }
+            }
+
+            p {
+                font-size: $Size8;
+            }
+        }
+
+        div:nth-child(3) {
+            img {
+                margin-right: margin40;
+                width: $width100;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hautePage {
+        #wave {
+            width: $width70;
+        }
+
+        .logo {
+            img {
+                width: $width50;
+                margin-left: 15px;
+            }
+
+            h3 {
+                display: none;
+            }
+        }
+
+        #menu {
+            li {
+                list-style: none;
+                font-size: $Size8;
+            }
+        }
+
+        .networks {
+            display: $flex;
+            #reseau {
+                margin: $marginNetworksIphone;
+                li {
+                    margin: $margin20;
+                    list-style: none;
+                }
+                hr{
+                    display: none;
+                }
+            }
+
+            div:nth-child(2) {
+                width: $width50;
+                margin: 70px 0px 0px 20px;
+
+                h1 {
+                    font-size: $Size15;
+                    u {                        
+                        font-size: $Size20;
+                    }
+                }
+                p {
+                    font-size: $Size8;
+                    width: $width100;
+                    margin-bottom: $margin10;
+                }
+            }
+            div:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}

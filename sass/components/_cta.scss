@@ -1,0 +1,71 @@
+.cta {
+    background-image: $degrade;
+    font-family: $Poppins;
+    font-size: $Size12;
+    color: $white;
+    padding: $paddingCta;
+    border-radius: $borderRadius;
+
+    &--plusLarge {
+        @extend .cta;
+        padding: $paddingCta;
+        margin: $s;
+    }
+
+    &--seemoreInfo {
+        @extend .cta;
+        padding: $paddingCta;
+        float: right;
+        margin: $s;
+    }
+
+    &--price {
+        @extend .cta;
+        margin: $marginCta;
+    }
+
+    &--pricevide {
+        @extend .cta;
+        border: 2px solid $bleufonce;
+        background-image: none;
+        color: $grey;
+        margin: $marginCta
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cta--plusLarge {
+        margin: $s;
+    }
+    .cta--price {
+        margin: $xxl;
+    }
+    .cta--pricevide {
+        margin: $xxl;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cta {
+        font-size: $Size10;
+        padding: 8px 10px;
+    }
+    .cta--plusLarge {
+        margin: 0px 120px;
+    }
+
+    .cta--seemoreInfo {
+        margin: $rien;
+    }
+
+    .cta--price {
+
+        margin: $marginPrice;
+
+    }
+
+    .cta--pricevide {
+        margin: $marginPrice;
+    }
+
+}

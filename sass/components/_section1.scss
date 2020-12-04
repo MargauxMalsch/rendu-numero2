@@ -1,0 +1,83 @@
+.section1 {
+    display: $flex;
+    align-items: $center;
+    background: url(../img/background-we-are.png) no-repeat right;
+
+    article:nth-child(1) {
+        margin: $marginSection;
+        width: 50%;
+        img {
+            width: $width90;
+        }
+    }
+
+    article:nth-child(2) {
+        width: 50%;
+
+        p:nth-child(1) {
+            color: $purple;
+            padding: $paddingtitle;
+            font-size: $Size20;
+            font-family: $Lato;
+            margin-bottom: $rien;
+            width: $width30;
+        }
+
+        p {
+            width: 70%;
+            font-size: $Size12;
+            font-family: $Poppins;
+            color: $greylight;
+            font-weight: $light;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section1 {
+        background: url(../img/background-we-are.png) no-repeat left;
+        background-size: 50%;
+    }
+
+    article:nth-child(2) {
+        width: $width50;
+
+        p:nth-child(1) {
+            font-size: $Size10;
+        }
+
+        p {
+            margin: $auto;
+            font-size: $Size8;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section1 {
+        display: $block;
+        width: $width100;
+        margin: $auto;
+
+        article:nth-child(1) {
+            width: $auto;
+            img {
+                width: $width100;
+            }
+        }
+
+        article:nth-child(2) {
+            width: $auto;
+
+            p:nth-child(1) {
+                font-size: $Size10;
+                text-align: $center;
+            }
+            p {
+                margin: 20px auto;
+                font-size: $Size8;
+            }
+        }
+    }
+}

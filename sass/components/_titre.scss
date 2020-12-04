@@ -1,0 +1,13 @@
+h2{
+    color: $grey;
+    font-family: $Poppins;
+    font-size: $Size50;
+    padding: $paddingtitle;
+}
+
+@media screen and (max-width: 768px){
+   h2{
+    font-size: $Size30; 
+   text-align: $center;
+   }   
+}

@@ -1,0 +1,230 @@
+footer {
+    display: $flex;
+    flex-direction: $row;
+
+    #footer {
+        position: absolute;
+        width: $width100;
+        z-index: -99;
+    }
+
+    .footer {
+        display: $flex;
+    }
+
+    article:nth-child(1) {
+        padding: $paddingFooterLogo;
+        font-family: $Dosis;
+        color: $white;
+
+        h2 {
+            font-family: $Dosis;
+            color: $white;
+            padding: 20px;
+        }
+
+        p {
+            font-family: $Poppins;
+            font-size: $Size20;
+        }
+
+        img {
+            padding: 20px 20px 5px 0px;
+        }
+    }
+
+    h6 {
+        font-family: $Poppins;
+        color: $white;
+        padding: 20px;
+        font-size: $Size20;
+        font-weight: normal;
+    }
+
+    ul {
+        padding: 20px;
+
+        li {
+            font-family: $Poppins;
+            font-weight: lighter;
+            color: $white;
+            list-style: none;
+            padding: 5px 2px;
+        }
+    }
+
+    .article2 {
+        padding: 200px 20px 0px 150px;
+    }
+
+    .article3 {
+        padding: $paddingFooterInfo;
+    }
+
+    .article4 {
+        padding: $paddingFooterInfo;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+
+        article:nth-child(1) {
+            padding: $paddingFooterLogoIpad;
+            h2 {
+                font-size: $Size25;
+            }
+            p {
+                text-align: $center;
+                font-size: $Size10;
+            }
+            img {
+                padding: $demixl;
+            }
+        }
+
+        h6 {
+            font-family: $Poppins;
+            color: $white;
+            padding: $padding10;
+            font-size: $Size12;
+            font-weight: $normal;
+        }
+
+        ul {
+            padding: $padding5;
+            li {
+                font-size: $Size10;
+                padding: 2px 1px;
+            }
+        }
+
+        .article2 {
+            padding: 100px 0px 0px 80px;
+            width: $width20;
+
+            ul {
+                li {
+                    font-size: $Size8;
+                }
+            }
+        }
+
+        .article3 {
+            padding: 100px 30px 0px 0px;
+            width: $width50;
+
+            ul {
+                li {
+                    font-size: $Size8;
+                }
+            }
+        }
+
+        .article4 {
+            width: $width40;
+            padding: 100px 0px 0px 0px;
+
+            img {
+                width: $width10;
+                margin: $s;
+            }
+
+            ul {
+                li {
+                    font-size: $Size8;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer {
+        display: $block;
+        background-image: $degrade;
+
+        #footer {
+            display: none;
+        }
+
+        .footer {
+            display:$block;
+        }
+
+        article:nth-child(1) {
+            padding: $paddingFooterLogoIphone;
+
+            h2 {
+                font-size: $Size40;
+            }
+
+            p {
+                font-size: $Size20;
+            }
+
+            img {
+                padding: 80px 10px 10px 40px;
+            }
+        }
+
+        h6 {
+            font-family: $Poppins;
+            color: $white;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        ul {
+            padding: $padding5;
+            li {
+                font-size: $Size10;
+                padding: 2px 1px;
+            }
+        }
+        .article2 {
+            padding: $paddingFooterArticleIphone;
+            width: $width100;
+            margin: $auto;
+            text-align: $center;
+
+            ul {
+                li {
+                    font-size: $Size12;
+                }
+            }
+        }
+
+        .article3 {
+            padding: $paddingFooterArticleIphone;
+            width: $width100;
+            margin: $auto;
+            text-align: $center;
+
+            ul {
+                li {
+                    font-size: $Size12;
+                }
+            }
+        }
+
+        .article4 {
+            padding: $paddingFooterArticleIphone;
+            width: $width100;
+            margin: $auto;
+            text-align: $center;
+
+            img {
+                display: none;
+            }
+
+            ul {
+                li {
+                    font-size: $Size12;
+                }
+            }
+        }
+    }
+}
